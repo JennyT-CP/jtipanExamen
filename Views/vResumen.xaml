@@ -18,9 +18,8 @@
             <Label
                 Text="RESUMEN"
                 FontSize="22"
-                FontAttributes="Bold"
                 TextColor="Blue"
-                HorizontalTextAlignment="Center"/>
+                Style="{StaticResource EstiloTitulo}"/>
 
             <!-- GRID: -->
             <Grid

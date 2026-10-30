@@ -13,9 +13,8 @@
             <Label
                 Text="INICIO DE SESIÓN"
                 FontSize="26"
-                FontAttributes="Bold"
                 TextColor="Purple"
-                HorizontalTextAlignment="Center"/>
+                Style="{StaticResource EstiloTitulo}"/>
 
             <!-- LOGO LOCAL -->
             <Image

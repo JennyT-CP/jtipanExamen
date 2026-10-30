@@ -19,8 +19,7 @@
                 Text="REGISTRO"
                 FontSize="22"
                 TextColor="Blue"
-                HorizontalTextAlignment="Center"
-                FontAttributes="Bold"/>
+                Style="{StaticResource EstiloTitulo}"/>
 
             <!-- GRID 1: -->
             <Grid
