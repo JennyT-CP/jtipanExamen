@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jtipanExamen.Views.vLogin"
+             Title="vLogin">
+
+     <ScrollView>
+        <VerticalStackLayout 
+            Padding="20" 
+            Spacing="10">
+
+            <!-- TÍTULO -->
+            <Label
+                Text="INICIO DE SESIÓN"
+                FontSize="26"
+                FontAttributes="Bold"
+                TextColor="Purple"
+                HorizontalTextAlignment="Center"/>
+
+            <!-- LOGO LOCAL -->
+            <Image
+                Source="ginmasio.png"
+                HeightRequest="120"
+                HorizontalOptions="Center"/>
+
+            <!-- GRID -->
+            <Grid
+                RowDefinitions="Auto,Auto,Auto"
+                ColumnDefinitions="120,*"
+                RowSpacing="15"
+                ColumnSpacing="10">
+
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Usuario:"
+                    VerticalOptions="Center"/>
+
+                <Entry
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    x:Name="txtUsuario"
+                    Placeholder="Ingrese usuario"/>
+
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Contraseña:"
+                    VerticalOptions="Center"/>
+
+                <Entry
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    x:Name="txtClave"
+                    Placeholder="Ingrese contraseña"
+                    IsPassword="True"/>
+
+                <Button
+                    x:Name="btnIngresar"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="Iniciar sesión"
+                    Clicked="btnIngresar_Clicked"/>
+
+            </Grid>
+
+            <!-- BOTÓN ACERCA DE -->
+            <Button
+                x:Name="btnAcerca"
+                Text="Acerca de"
+                Clicked="btnAcerca_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

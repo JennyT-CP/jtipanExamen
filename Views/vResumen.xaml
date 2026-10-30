@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jtipanExamen.Views.vResumen"
+             Title="vResumen">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="15">
+
+            <!-- USUARIO QUE INICIO SESION -->
+            <Label
+                x:Name="lblUsuario"
+                FontSize="16"
+                FontAttributes="Bold"/>
+
+            <!-- TÍTULO -->
+            <Label
+                Text="RESUMEN"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="Blue"
+                HorizontalTextAlignment="Center"/>
+
+            <!-- GRID: -->
+            <Grid
+                RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+                ColumnDefinitions="140,*"
+                RowSpacing="15"
+                ColumnSpacing="10">
+
+                <!-- NOMBRE -->
+                <Label 
+                    Grid.Row="0" 
+                    Grid.Column="0"                      
+                    Text="Nombre:"/>
+                
+                <Label 
+                    Grid.Row="0" 
+                    Grid.Column="1"                   
+                    x:Name="lblNombre"/>
+
+                <!-- APELLIDO -->
+                <Label 
+                    Grid.Row="1" 
+                    Grid.Column="0"
+                    Text="Apellido:"/>
+                
+                <Label 
+                    Grid.Row="1" 
+                    Grid.Column="1"
+                    x:Name="lblApellido"/>
+
+                <!-- EDAD -->
+                <Label 
+                    Grid.Row="2" 
+                    Grid.Column="0"                 
+                    Text="Edad:"/>
+                
+                <Label 
+                    Grid.Row="2" 
+                    Grid.Column="1"                      
+                    x:Name="lblEdad"/>
+
+                <!-- FECHA -->
+                <Label 
+                    Grid.Row="3" 
+                    Grid.Column="0"
+                    Text="Fecha de inicio:"/>
+                
+                <Label 
+                    Grid.Row="3" 
+                    Grid.Column="1"
+                    x:Name="lblFecha"/>
+
+                <!-- PLAN -->
+                <Label 
+                    Grid.Row="4" 
+                    Grid.Column="0"
+                    Text="Plan:"/>
+                
+                <Label 
+                    Grid.Row="4" 
+                    Grid.Column="1"
+                    x:Name="lblPlan"/>
+
+                <!-- CASILLERO -->
+                <Label 
+                    Grid.Row="5" 
+                    Grid.Column="0"
+                    Text="Casillero:"/>
+                
+                <Label 
+                    Grid.Row="5" 
+                    Grid.Column="1"
+                    x:Name="lblCasillero"/>
+
+                <!-- MONTO INICIAL -->
+                <Label 
+                    Grid.Row="6" 
+                    Grid.Column="0"
+                    Text="Monto inicial:"/>
+                
+                <Label
+                    Grid.Row="6" 
+                    Grid.Column="1"
+                    x:Name="lblMontoInicial"/>
+
+                <!-- PAGO MENSUAL -->
+                <Label 
+                    Grid.Row="7" 
+                    Grid.Column="0"
+                    Text="Pago mensual:"/>
+                
+                <Label 
+                    Grid.Row="7" 
+                    Grid.Column="1"
+                    x:Name="lblPagoMensual"/>
+
+                <!-- PAGO TOTAL -->
+                <Label 
+                    Grid.Row="8" 
+                    Grid.Column="0"
+                    Text="Pago total:"/>
+                
+                <Label 
+                    Grid.Row="8" 
+                    Grid.Column="1"
+                    x:Name="lblPagoTotal"
+                    FontAttributes="Bold"
+                    TextColor="Blue"/>
+
+            </Grid>
+
+            <!-- BOTÓN PARA EXPORTAR A UN ARCHIVO TXT -->
+            <Button
+                x:Name="btnExportar"
+                Text="EXPORTAR RESUMEN"
+                Clicked="btnExportar_Clicked"/>
+
+            <!-- BOTÓN CERRAR SESIÓN -->
+            <Button
+                x:Name="btnCerrar"
+                Text="CERRAR SESIÓN"
+                Clicked="btnCerrar_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
